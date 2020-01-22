@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Date"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="403dp"
+        android:layout_height="280dp"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        tools:context=".Date"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="50dp"
+            android:paddingBottom="8dp"
+            android:text="Pickup Day And Time"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/in_date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="82dp"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/in_date"
+            android:layout_toEndOf="@+id/in_date"
+            android:layout_toRightOf="@+id/in_date"
+            android:text="SELECT DATE" />
+
+
+        <EditText
+            android:id="@+id/in_time"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/in_date"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_date"
+            android:layout_alignStart="@+id/btn_date"
+            android:layout_alignLeft="@+id/btn_date"
+            android:text="SELECT TIME" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
